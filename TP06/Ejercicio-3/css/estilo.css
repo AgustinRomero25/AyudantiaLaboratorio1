@@ -1,0 +1,63 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+header {
+    background-color: lightpink;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+form {
+    background-color:bisque;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+form section {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin-bottom: 1em;
+}
+
+form label {
+    margin-right: 1em;
+    width: 30%;
+    text-align: right;
+}
+
+form input {
+    padding: 1em;
+    width: 60%;
+}
+
+#texto {
+    width: 50%;
+    background-color: rgb(202, 250, 202);
+    padding: 1em;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+figure {
+    text-align: center;
+}

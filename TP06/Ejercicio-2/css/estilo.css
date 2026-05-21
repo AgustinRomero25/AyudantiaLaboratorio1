@@ -1,0 +1,55 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+header {
+    background-color: lightpink;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+form {
+    background-color:bisque;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form section {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+form label {
+    margin-right: 1em;
+    text-align: right;
+}
+
+form input {
+    padding: 1em;
+}
+
+textarea {
+    resize: none;
+    padding: 0.5em;
+}
+
+#texto {
+    width: 50%;
+    background-color: rgb(202, 250, 202);
+    padding: 1em;
+}
+
+input[type="button"] {
+    margin: 0 0.5em;
+    border: 0.15em solid lightgray;
+}

@@ -1,0 +1,60 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+header {
+    background-color: lightpink;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+form>section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+form section label {
+    margin-right: 1em;
+    width: 30%;
+    text-align: right;
+}
+
+form>section p {
+    font-size: 12px;
+}
+
+input {
+    border: 0.15em solid darkgray;
+    padding: 0.25em;
+    box-shadow: 0 0 8px cyan;
+    box-shadow: 0 0 0;
+}
+
+#texto {
+    width: 50%;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    width: 3em;
+    margin: 0 auto;
+}
+
+#sol {
+    display: none;
+}
