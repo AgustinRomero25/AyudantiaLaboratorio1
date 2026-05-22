@@ -2,13 +2,13 @@
 const suma = document.getElementById('suma'); 
 
 suma.addEventListener('click', sumar);
-const resultado = document.querySelector('#resultado');
+const resultado = document.getElementById('resultado');
 const num1 = document.getElementById('num1');
 const num2 = document.getElementById('num2');
+let result;
 
 function sumar() {
-    const result = Number(num1.value) + Number(num2.value);
-    window.alert(result);
+    result = parseFloat(num1.value) + parseFloat(num2.value);
 	resultado.innerHTML = 'Resultado: ' + result;
 }
 
@@ -18,31 +18,25 @@ boton.addEventListener('click', resta);
 
 
 function resta() {
-	result = Number(num1.value) - Number(num2.value);
+	result = parseFloat(num1.value) - parseFloat(num2.value);
 	resultado.innerHTML = 'Resultado: ' + result;
 }
 // Función Multiplicar
 
-const botonMultiplicar = document.querySelector('#multiplicar');
+const botonMultiplicar = document.getElementById('multiplicar');
 botonMultiplicar.addEventListener('click', multiplicar);
 
 function multiplicar() {
-	result = Number(num1.value) * Number(num2.value);
+	result = parseFloat(num1.value) * parseFloat(num2.value);
 	resultado.innerHTML = 'Resultado: ' + result;
 }
 
 // Función Dividir
 
-const botonDividir = document.querySelector('#dividir');
+const botonDividir = document.getElementById('dividir');
 botonDividir.addEventListener('click', dividir);
 
 function dividir() {
-	if(num2.value != 0)
-	{
-		result = Number(num1.value) / Number(num2.value);
+		result = parseFloat(num1.value) / parseFloat(num2.value);
 		resultado.innerHTML = 'Resultado: ' + result;
-	} else 
-	{
-		resultado.innerHTML = 'No se puede dividir en 0.';
 	}
-}

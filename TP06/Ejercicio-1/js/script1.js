@@ -4,13 +4,14 @@ en el input color. Para ello cree una función de nombre cambiarColorLetra() don
 acceda al elemento mediante el id y realice los cambios, además, utilice un listener 
 que llame a dicha función. Comente el código justificando el evento elegido.*/
 
-document.getElementById("color").addEventListener("input", cambiarColorLetra); // Se utiliza el evento input porque permite que el cambio sea inmediato a diferencia de change.
+document.getElementById('color').addEventListener('input', cambiarColorLetra); // Se utiliza el evento input porque permite que el cambio sea inmediato a diferencia de change.
 
 function cambiarColorLetra()
 {
-	let colorSeleccionado = document.getElementById("color").value;
-	document.body.style.color = colorSeleccionado;
-	console.log("Se ha cambiado el color de las letras a " + colorSeleccionado + ".");
+	let texto = document.getElementById('texto');
+	let colorSeleccionado = document.getElementById('color').value;
+	texto.style.color = colorSeleccionado;
+	console.log('Se ha cambiado el color de las letras a ' + colorSeleccionado + '.');
 }
 
 
@@ -27,19 +28,19 @@ Los cambios de estilos serán los siguientes:
  */
 
 let inputCbu = document.querySelector('input[type="number"]');
-inputCbu.addEventListener("focus", obtieneFoco);
-inputCbu.addEventListener("blur", pierdeFoco);
+inputCbu.addEventListener('focus', obtieneFoco);
+inputCbu.addEventListener('blur', pierdeFoco);
 
 function obtieneFoco()
 {
 	inputCbu.style.boxShadow = '0 0 8px cyan';
-	console.log("Se activó el foco en el segundo input.");
+	console.log('Se activó el foco en el segundo input.');
 }
 
 function pierdeFoco()
 {
 	inputCbu.style.boxShadow = '0 0 0';
-	console.log("Se perdió el foco en el segundo input.");
+	console.log('Se perdió el foco en el segundo input.');
 }
 
 
@@ -52,12 +53,12 @@ escribiendo. Utilice el acceso del punto anterior para el input y muestre la can
 de caracteres en el párrafo inferior, utilizando una función de nombre cuentaCaracteres().
 */
 
-inputCbu.addEventListener("input", cuentaDeCaracteres);
+inputCbu.addEventListener('input', cuentaDeCaracteres);
 
 function cuentaDeCaracteres()
 {
 	let cant = inputCbu.value.length;
-	document.getElementById("mensaje").textContent = cant + " caracteres.";
+	document.getElementById('mensaje').innerHTML = cant + ' caracteres.';
 }
 
 
@@ -71,24 +72,24 @@ a negro, las letras a color blanco y se muestre la imagen del sol. Realice lo op
 la imagen del sol para volver a como estaba la página normalmente.
 */
 
-document.getElementById("luna").addEventListener("click",modoOscuro);
-document.getElementById("sol").addEventListener("click",modoClaro);
+document.getElementById('luna').addEventListener('click',modoOscuro);
+document.getElementById('sol').addEventListener('click',modoClaro);
 
 function modoOscuro () {
-	document.body.style.backgroundColor = "#000000";
-	document.body.style.color = "#FFFFFF";
-	sol.style.display = "block";
-	luna.style.display = "none";
+	document.body.style.backgroundColor = '#000000';
+	document.body.style.color = '#FFFFFF';
+	sol.style.display = 'block';
+	luna.style.display = 'none';
 	
-	console.log("Se ha cambiado la página a Modo Oscuro");
+	console.log('Se ha cambiado la página a Modo Oscuro');
 }
 
 function modoClaro () {
-	document.body.style.backgroundColor = "#FFFFFF";
-	document.body.style.color = "#000000";
-	sol.style.display = "none";
-	luna.style.display = "block";
+	document.body.style.backgroundColor = '#FFFFFF';
+	document.body.style.color = '#000000';
+	sol.style.display = 'none';
+	luna.style.display = 'block';
 	
-	console.log("Se ha cambiado la página a Modo Claro");
+	console.log('Se ha cambiado la página a Modo Claro');
 }
 
