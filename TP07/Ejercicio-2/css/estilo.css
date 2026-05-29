@@ -1,0 +1,80 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    width: 40%;
+    margin: 1em auto;
+    border: 0.25em solid #4ca0af;
+    padding: 1em;
+}
+
+legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4ca0af;
+}
+
+input, select {
+    display: block;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, select {
+    padding: 0.5em;
+    border: 0.15em solid #ccc;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 1em);
+}
+
+select {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+fieldset section {
+    display: flex;
+    flex-direction: row;
+}
+
+figure {
+    width: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin-top: 0.5em;
+    background-color: #4ca0af;
+    color: white;
+    padding: 1em;
+    border: 0;
+    width: 100%;
+}
+
+#exito {
+    width: 40%;
+    margin: 1em auto;
+    border: 0.25em solid #4ca0af;
+    padding: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1de61d;
+    display: none;
+}

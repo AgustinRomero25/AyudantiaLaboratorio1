@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="FACET - LAB">
+    <meta name="description" content="Resolucion de Trabajo Practico 4 - 2022">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Encuesta</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Encuesta Académica</h1>
+        </header>
+        <section>
+            <form id="inicio" action="encuesta.php" method="post">
+               
+                <fieldset class="infodatospersonales" id="seccion1">
+                    <legend>Datos Personales (Paso 1/3)</legend>
+                    <label for="nombre">Nombre
+                    </label>
+                    <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Ingrese su nombre completo" required>
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" value="2000-01-01">
+                    <section id="clsBotonera">
+                        <input type="button" class="clsBotones" value="Siguiente" id="boton1">
+                    </section>
+                </fieldset>
+
+                <fieldset class="infocarreras" id="seccion2">
+                    <legend>Sobre las carreras (Paso 2/3)</legend>
+                    <label for="carrera">Carrera en la que se inscribió
+                    </label>
+                    <select name="carrera" id="carrera">
+                        <option value="programador">Programador Universitario</option>
+                        <option value="licenciatura">Licenciatura en Informática</option>
+                        <option value="ingenieria">Ingeniería en Informática</option>
+                    </select>
+
+                    <legend>Recursa la carrera?</legend>
+                    <section>
+                        <input type="radio" id="si" class="clsCheck" name="condicion" value="si" checked>
+                        <label for="si">Si</label>
+                    </section>
+                    <section>
+                        <input type="radio" id="no" class="clsCheck" name="condicion" value="no" checked>
+                        <label for="no">No</label>
+                    </section>
+                    
+                    <legend>Materias que cursa</legend>
+                    <section>
+                        <input type="checkbox" class="clsCheck" name="laboratorio" id="laboratorio" value="Laboratorio I" checked>
+                        <label for="laboratorio">Laboratorio I</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" class="clsCheck" name="elementos" id="elementos" value="Elementos de computación y lógica">
+                        <label for="elementos">Elementos de computación y lógica</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" class="clsCheck" name="otras" id="otras" value="Otras">
+                        <label for="otras">Otras</label>
+                    </section>    
+                    <section id="clsBotonera">
+                        <input type="button" class="clsBotones" value="Siguiente" id="boton2">
+                    </section>
+                </fieldset>
+
+                <fieldset class="infomaterias" id="seccion3">
+                    <legend>Sobre las Materias (Paso 3/3)</legend>
+                    <p>Comisión práctica a la que asiste:</p>
+                    <label for="dia">Dia: </label>
+                        <select name="day" id="dia">
+                            <option value="martes">Martes</option>
+                            <option value="miercoles">Miércoles</option>
+                            <option value="viernes" selected>Viernes</option>
+                        </select>
+                    
+                    <label for="horario">Hora: </label>
+                    <input type="time" id="horario">
+                    
+                    <label for="calificacion">Del 1 al 10 como calificaría al dictado de la materia?</label>
+                    <input type="number" name="valor" id="calificacion" min="1" max="10" value=5 required>
+                    
+                    <section id="clsBotonera">
+                        <input type="submit" class="clsBotones" value="Finalizar" id="boton3">
+                    </section>
+                </fieldset>
+            </form>
+            <section id="mensaje">
+                <p>Encuesta guardada exitosamente!</p>
+            </section>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main>
+        <article>
+            <form action="registro.php" method="post" id="form">
+                <fieldset>
+                    <legend id="titulo">Registro</legend>
+                    <label for="lista" id="lbl-lista">Idioma</label>
+                    <select name="" id="lista">
+                        <option value="es">Español</option>
+                        <option value="en">Inglés</option>
+                        <option value="por">Portugués</option>
+                    </select>
+                    <label for="usuario" id="lbl-usuario">Usuario</label>
+                    <input type="text" id="usuario">
+                    <label for="pass" id="lbl-pass">Contraseña</label>
+                    <input type="password" id="pass">
+                    <label for="pass2" id="lbl-pass2">Repetir Contraseña</label>
+                    <input type="password" id="pass2">
+                    <section>
+                        <input type="checkbox" id="acepto">
+                        <label for="acepto" id="lbl-acepto">Acepto los términos y condiciones</label>
+                    </section>
+                    <input type="submit" id="boton">
+                </fieldset>
+            </form>
+        </article>
+        <article id="exito">
+            <p>Registro exitoso!</p>
+        </article>
+    </main>
+	<script src="js/Script2.js"></script>
+</body>
+</html>

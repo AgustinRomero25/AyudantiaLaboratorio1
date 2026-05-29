@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Compra Juegos</h1>
+    </header>
+    <main>
+        <section>
+            <form action="php/compra.php" method="post">
+                <section>
+                    <input type="checkbox" name="juego1" value="2.49" class="juegos">
+                    <label for="juego1">Stardew Valley $2.49</label>
+                </section>
+                <section>
+                    <input type="checkbox" name="juego2" value="29.99" class="juegos">
+                    <label for="juego2">GTA V $29.99</label>
+                </section>
+                <section>
+                    <input type="checkbox" name="juego3" value="41.99" class="juegos">
+                    <label for="juego3">Civilization VII $41.99</label>
+                </section>
+                <section>
+                    <input type="checkbox" name="juego4" value="59.99" class="juegos">
+                    <label for="juego4">Lego Batman $59.99</label>
+                </section>
+                <section>
+                    <input type="checkbox" name="juego5" value="69.99" class="juegos">
+                    <label for="juego5">EA Sports FC 2026 $69.99</label>
+                </section>
+                <input type="submit" value="Comprar">
+            </form>
+        </section>
+        <section>
+            <h2>Monto a pagar en dólares</h2>
+            <p id="monto"></p>
+        </section>
+    </main>
+    <script src="js/script4.js"></script>
+</body>
+</html>

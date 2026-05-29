@@ -1,0 +1,61 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    width: 40%;
+    margin: 1em auto;
+    border: 0.25em solid #4caf54;
+    padding: 1em;
+}
+
+section {
+    width: 40%;
+    margin: 1em auto;
+    background-color: #4caf54;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf54;
+}
+
+input, select {
+    display: block;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, select {
+    padding: 0.5em;
+    border: 0.15em solid #ccc;
+}
+
+input[type="number"] {
+    width: calc(100% - 1em);
+}
+
+select {
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin-top: 0.5em;
+    background-color: #4caf54;
+    color: white;
+    padding: 1em;
+    border: 0;
+    width: 100%;
+}

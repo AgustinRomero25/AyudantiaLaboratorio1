@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    margin-bottom: 1em;
+}
+
+form {
+    width: 96%;
+    margin: 0 auto;
+}
+
+main {
+    background-color: rgb(247, 239, 218);
+    padding-bottom: 1em;
+}
+
+.infodatospersonales {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 142, 142);
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.infodatospersonales legend {
+    display: flex;
+    text-align: center;
+    background-color: rgb(231, 142, 142);
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+label {
+    margin-bottom: 0.25em;
+    padding: 0.2em;
+}
+
+.infodatospersonales label {
+    width: 100%;
+}
+
+.infodatospersonales input {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: 0.1em solid black;
+}
+
+.infocarreras {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    background-color: rgb(223, 189, 126);
+    padding: 0.5em;
+    display: none; 
+}
+
+.infocarreras legend {
+    display: flex;
+    text-align: center;
+    background-color: rgb(223, 189, 126);
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+.infocarreras select {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: 0.1em solid black;
+}
+
+.infocarreras section {
+    margin-bottom: 0.5em;
+}
+
+.infomaterias {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    background-color: rgb(182, 240, 182);
+    padding: 0.5em;
+    display: none;
+}
+
+.infomaterias legend {
+    display: flex;
+    text-align: center;
+    background-color: rgb(182, 240, 182);
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+.infomaterias input, .infomaterias select {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: 0.1em solid black;
+}
+
+.infomaterias section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.clsCheck{
+    margin-right:0.3em;
+}
+
+#clsBotonera{
+    display: flex;
+    justify-content: center;
+}
+.clsBotones {
+    margin: 0.5rem;
+    padding: 1em !important;
+    background-color: rgb(104, 104, 241);
+    color: white;
+}
+
+#mensaje {
+    display: none;
+    text-align: center;
+    background-color: rgb(182, 240, 182);
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 30px;
+}
+

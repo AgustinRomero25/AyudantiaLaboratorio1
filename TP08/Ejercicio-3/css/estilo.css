@@ -1,0 +1,31 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    background-color: darkslateblue;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+
+article {
+    padding: 1em;
+    text-align: center;
+}
+
+#palabra {
+    padding: 1em;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+}
+
+#intentos {
+    width: calc(100% - 3em);
+    padding: 1.5em;
+    background-color: rgb(142, 128, 229);
+    font-weight: bold;
+}

@@ -1,0 +1,57 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    background-color: darkslateblue;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main>section {
+    width: 50%;
+}
+
+form {
+    padding: 1em;
+    background-color: rgb(235, 218, 250);
+}
+
+form section {
+    margin-bottom: 1em;
+}
+
+input {
+    margin-right: 0.5em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#monto {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    background-color: darkslateblue;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
